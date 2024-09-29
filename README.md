@@ -1,2 +1,2 @@
 # Saver
- A very basic google extension to save tabs and open them later with one button
+ A very basic google extension most used to saving tabs
