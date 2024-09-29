@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Series Saver</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="mystyles.css">
+  <style>
+    #savedUrlName {
+      cursor: pointer;
+    }
+
+    #content {
+      width: 350px; 
+      height: 2000px;
+      margin: 0 auto;
+      background-color: white; 
+      padding: 20px; 
+    }
+    .saved-url {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    
+    .saved-url button {
+      flex: 1;
+      margin: 0 5px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    
+    .save-button {
+      background-color: goldenrod;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 7.5px;
+      cursor: pointer;
+    }
+
+    .name-input {
+      background-color: lightgray;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 7.5px;
+      cursor: pointer;
+    }
+
+    :root {
+      --scrollbar-bg: rgb(240, 240, 240);
+      --scrollbar-color: lightgray;
+    }
+
+    html::-webkit-scrollbar {
+      background-color: var(--scrollbar-bg);
+      border-radius: 5px;
+    }
+
+    html::-webkit-scrollbar-thumb {
+      background-color: var(--scrollbar-color);
+      border-radius: 5px;
+    }
+
+
+    #sun {
+      display: none;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 20px; 
+      cursor: pointer;
+    }
+
+    #moon {
+      display: inline-block;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 20px; 
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+   <div id="content">
+    <p id="savedUrlName" style="display: block;"></p>
+    <input type="text" id="nameInput" placeholder="URL Name" />
+    <button id="saveButton">Save</button>
+  </div>
+    <i class='bx bx-sun' id = "sun"></i>
+    <i class='bx bx-moon' id = "moon"></i>
+  <script src="popup.js"></script>
+</body>
+</html>
